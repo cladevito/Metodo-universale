@@ -1,0 +1,33 @@
+Metti qui dentro le immagini della lezione.
+I nomi file devono essere ESATTAMENTE questi (l'app li cerca così).
+Se un'immagine manca, l'app funziona lo stesso: mostra l'emoji al posto della foto.
+Puoi aggiungerle una alla volta, quando vuoi.
+
+LOGO E ICONE
+  logo.png       logo MenteViva (cervello nel cerchio), sfondo trasparente
+  favicon.png    icona scheda browser, quadrata 128x128
+  icon-192.png   icona app 192x192 (per installazione)
+  icon-512.png   icona app 512x512 (per installazione)
+
+LEZIONE SUPERIORI  (orizzontali 16:9, 1792x1024)
+  01-domanda.png
+  02-cervello.png
+  03-pilota.png
+  04-motore.png
+  05-dopamina.png
+  06-guerra.png
+  07-batteria.png
+  08-nonseiproblema.png
+  09-sfida.png
+
+LEZIONE MEDIE  (orizzontali 16:9, 1792x1024)
+  01-ciao.png
+  02-console.png
+  03-pensieri.png
+  04-batteria.png
+  05-telefono.png
+  06-ladri.png
+  07-pocobene.png
+  08-sfida.png
+
+Tutti i nomi sono diversi tra loro: nessun file si sovrascrive.
