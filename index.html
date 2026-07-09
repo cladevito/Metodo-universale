@@ -28,12 +28,12 @@ button{font-family:inherit;cursor:pointer;border:none;outline:none;color:inherit
 /* HOME */
 #s-home .scroll{position:relative;z-index:1;padding:calc(28px + var(--st)) 22px calc(30px + var(--sb))}
 .home-head{text-align:center;margin-bottom:20px}
-.brainmark{width:60px;height:60px;margin:0 auto 6px;display:block}
+.brainmark{height:56px;width:auto;margin:0 auto 8px;display:block}
 .eyebrow{font-size:12px;font-weight:700;letter-spacing:2.5px;color:var(--blu);text-transform:uppercase}
 .h1{font-size:34px;font-weight:900;line-height:1.05;letter-spacing:-.5px;margin:6px 0 4px}
 .h1 .lite{color:var(--blu)}
 .h-sub{font-size:14px;color:var(--muted);font-weight:500}
-.triangle{width:160px;margin:2px auto 24px;display:block}
+.home-hero{display:block;width:100%;max-width:440px;margin:6px auto 22px;border-radius:20px}
 .panel{max-width:520px;margin:0 auto}
 .field{margin-bottom:20px}
 .field-lbl{font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;margin-bottom:9px;padding-left:2px}
@@ -61,7 +61,7 @@ button{font-family:inherit;cursor:pointer;border:none;outline:none;color:inherit
 /* LESSON */
 #s-lesson{background:#fff}
 .lbar{position:relative;z-index:2;display:flex;align-items:center;gap:12px;padding:12px 18px;flex-shrink:0}
-.lbar .bm{width:26px;height:26px;flex-shrink:0}
+.lbar .bm{height:24px;width:auto;max-width:44px;object-fit:contain;flex-shrink:0}
 .lbar .bt{flex:1;font-size:13.5px;font-weight:700;color:var(--ink);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .lbar .bt em{color:var(--muted);font-weight:600;font-style:normal}
 .lbar .bx{font-size:12px;font-weight:700;color:var(--muted);background:var(--azzl);border-radius:20px;padding:5px 11px;flex-shrink:0}
@@ -72,7 +72,7 @@ button{font-family:inherit;cursor:pointer;border:none;outline:none;color:inherit
 @media(min-width:640px){.slidebox{padding:34px 15% 24px}}
 .slidebox.in{animation:slidein .34s cubic-bezier(.22,1,.36,1)}
 @keyframes slidein{from{opacity:0;transform:translateX(26px)}to{opacity:1;transform:none}}
-.hero{width:100%;aspect-ratio:16/9;border-radius:18px;object-fit:cover;margin-bottom:20px;display:none}
+.hero{width:100%;aspect-ratio:16/9;border-radius:18px;object-fit:cover;margin:16px 0 4px;display:none}
 .kicker{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--blu);text-transform:uppercase;margin-bottom:12px}
 .kicker .kdot{width:26px;height:26px;border-radius:8px;background:var(--azzl);display:flex;align-items:center;justify-content:center;font-size:15px}
 .title{font-size:27px;font-weight:900;line-height:1.12;letter-spacing:-.4px;margin-bottom:14px}
@@ -121,26 +121,12 @@ button{font-family:inherit;cursor:pointer;border:none;outline:none;color:inherit
   <svg class="blob bl" viewBox="0 0 200 200"><path fill="#EAF3FF" d="M42.6,-56.7C55,-47.6,64.2,-34.3,68.3,-19.4C72.4,-4.5,71.4,12,64.9,25.9C58.4,39.8,46.4,51.1,32.5,58.6C18.6,66.1,2.8,69.8,-13.6,68.1C-30,66.4,-47,59.3,-57.9,46.7C-68.8,34.1,-73.6,16,-72.3,-1.2C-71,-18.4,-63.6,-34.7,-52,-44.9C-40.4,-55.1,-24.6,-59.2,-8.4,-60.3C7.8,-61.4,15.6,-59.5,42.6,-56.7Z" transform="translate(100 100)"/></svg>
   <div class="scroll">
     <div class="home-head">
-      <svg class="brainmark" viewBox="0 0 100 100" fill="none" stroke="#0156D3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="50" cy="50" r="42"/><path d="M50 30v42"/>
-        <path d="M50 34c-4-6-14-6-16 1c-7 1-8 9-3 12c-4 4 0 11 5 10c1 6 9 7 12 2"/>
-        <path d="M50 34c4-6 14-6 16 1c7 1 8 9 3 12c4 4 0 11-5 10c-1 6-9 7-12 2"/>
-      </svg>
+      <img class="brainmark" src="img/logo.png" alt="MenteViva" onerror="this.style.display='none'">
       <div class="eyebrow">MenteViva Italia</div>
       <div class="h1">Metodo di <span class="lite">Studio</span></div>
       <div class="h-sub">Sistema Triangolare · lezioni guidate</div>
     </div>
-    <svg class="triangle" viewBox="0 0 200 176">
-      <polygon points="100,6 148,90 52,90" fill="#0156D3"/>
-      <polygon points="52,90 100,90 76,132" fill="#0156D3"/>
-      <polygon points="148,90 100,90 124,132" fill="#0156D3"/>
-      <polygon points="100,90 124,132 76,132" fill="#57D6FF"/>
-      <polygon points="52,90 148,90 100,170" fill="#0142A6"/>
-      <g stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round">
-        <circle cx="100" cy="52" r="10"/><path d="M100 44v16M92 52h16"/>
-        <circle cx="100" cy="125" r="8"/>
-      </g>
-    </svg>
+    <img class="home-hero" src="img/home.png" alt="" onerror="this.style.display='none'">
     <div class="panel">
       <div class="field">
         <div class="field-lbl">Percorso dello studente</div>
@@ -174,7 +160,7 @@ button{font-family:inherit;cursor:pointer;border:none;outline:none;color:inherit
 <div class="screen" id="s-lesson">
   <svg class="blob tr" viewBox="0 0 200 200" style="opacity:.5;width:220px"><path fill="#EAF3FF" d="M46.5,-59.2C59.3,-49.6,68.1,-34.6,71.6,-18.5C75.1,-2.4,73.3,14.9,65.8,29.1C58.3,43.3,45.1,54.5,30.3,61.6C15.5,68.7,-0.9,71.7,-16.7,68.2C-32.5,64.7,-47.7,54.7,-57.8,41C-67.9,27.3,-72.9,9.9,-70.6,-6.4C-68.3,-22.7,-58.7,-37.9,-46,-47.8C-33.3,-57.7,-17.6,-62.3,-0.5,-61.7C16.7,-61.1,33.7,-68.8,46.5,-59.2Z" transform="translate(100 100)"/></svg>
   <div class="lbar">
-    <svg class="bm" viewBox="0 0 100 100" fill="none" stroke="#0156D3" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><circle cx="50" cy="50" r="42"/><path d="M50 32v40"/><path d="M50 36c-4-5-13-5-15 1c-6 1-7 8-2 11c-4 3 0 10 4 9c1 5 8 6 11 2"/><path d="M50 36c4-5 13-5 15 1c6 1 7 8 2 11c4 3 0 10-4 9c-1 5-8 6-11 2"/></svg>
+    <img class="bm" src="img/logo.png" alt="" onerror="this.style.display='none'">
     <div class="bt" id="lbar-title">Lezione 1</div>
     <div class="bx" id="lbar-step">1/11</div>
     <button class="bx" style="background:none;color:var(--muted)" onclick="goHome()">Esci</button>
@@ -317,7 +303,13 @@ const GAME={
   {t:"Fai una lista di 3 cose prima di aprire i libri",ans:"P"},
   {t:"Guardi ancora un video \"e poi smetto\" alle 23:30",ans:"M"},
   {t:"Studi la materia difficile quando la batteria è alta",ans:"P"},
-  {t:"Rispondi ai messaggi appena arrivano mentre studi",ans:"M"}
+  {t:"Rispondi ai messaggi appena arrivano mentre studi",ans:"M"},
+  {t:"Rileggi la stessa pagina quattro volte senza fare uno schema",ans:"M"},
+  {t:"Ti dai un premio dopo aver finito, non prima di iniziare",ans:"P"},
+  {t:"Studi con la musica cantata perché \"ti carica\"",ans:"M"},
+  {t:"Chiudi le notifiche del computer prima di cominciare",ans:"P"},
+  {t:"Ti dici \"tanto ormai è tardi, recupero domani\"",ans:"M"},
+  {t:"Fai la pausa camminando, senza aprire il telefono",ans:"P"}
  ],
  med:[
   {t:"Metti il telefono nell'altra stanza prima di studiare",ans:"P"},
@@ -325,7 +317,13 @@ const GAME={
   {t:"Scrivi le 2 cose da fare prima di aprire i libri",ans:"P"},
   {t:"Fai i compiti sul divano con la TV accesa",ans:"M"},
   {t:"Studi 15 minuti e poi fai una pausa vera",ans:"P"},
-  {t:"Mandi messaggi alle amiche mentre fai i compiti",ans:"M"}
+  {t:"Mandi messaggi alle amiche mentre fai i compiti",ans:"M"},
+  {t:"Rileggi la stessa pagina tante volte senza capirla",ans:"M"},
+  {t:"Scrivi il pensiero volante su un foglio e torni al libro",ans:"P"},
+  {t:"Inizi dai compiti quando la batteria è ancora carica",ans:"P"},
+  {t:"Studi sdraiato sul letto perché sei più comodo",ans:"M"},
+  {t:"Finisci un esercizio anche se ti annoia un po'",ans:"P"},
+  {t:"Salti i compiti difficili e fai solo quelli facili",ans:"M"}
  ]
 };
 
@@ -376,7 +374,7 @@ function render(){
   let q='';
   if(s.q){q=`<div class="q"><div class="q-t">${gz(s.q.t)}</div>`
      +s.q.a.map(a=>`<button class="ans" onclick="pickReflect(this)">${gz(a)}</button>`).join('')+`</div>`;}
-  el.innerHTML=img+kick+`<div class="title">${gz(s.title)}</div><div class="body">${gz(s.body)}</div>`+q;
+  el.innerHTML=kick+`<div class="title">${gz(s.title)}</div><div class="body">${gz(s.body)}</div>`+img+q;
   updateNav();
 }
 function pickReflect(b){
@@ -384,9 +382,11 @@ function pickReflect(b){
   b.classList.add('sel');answered[idx]=true;updateNav();
 }
 
-let gStep=0,gScore=0;
+let gStep=0,gScore=0,gList=[];
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function renderGame(el){
   gStep=0;gScore=0;
+  gList=shuffle(GAME[LVL].slice()).slice(0,8); // 8 domande casuali, ordine mescolato
   el.innerHTML=`<div class="kicker"><span class="kdot">🎮</span>Gioco</div>
     <div class="title">Pilota o Motore?</div>
     <div class="body"><p>È una scelta del <strong>Pilota</strong> (saggio) o del <strong>Motore</strong> (impulsivo)? Tocca la risposta.</p></div>
@@ -397,22 +397,21 @@ function renderGame(el){
   drawPm();
 }
 function drawPm(){
-  const list=GAME[LVL];
-  document.getElementById('pm-score').textContent=gStep+' / '+list.length;
-  document.getElementById('pm-item').textContent=gz(list[gStep].t);
+  document.getElementById('pm-score').textContent=gStep+' / '+gList.length;
+  document.getElementById('pm-item').textContent=gz(gList[gStep].t);
   document.getElementById('pm-fb').textContent='';
 }
 function pmPick(v){
-  const list=GAME[LVL],ok=list[gStep].ans===v,fb=document.getElementById('pm-fb');
+  const ok=gList[gStep].ans===v,fb=document.getElementById('pm-fb');
   if(ok){gScore++;fb.style.color='var(--g)';fb.textContent='✅ Giusto!';}
-  else{fb.style.color='var(--r)';fb.textContent=list[gStep].ans==='P'?'🧭 Era il Pilota':'⚡ Era il Motore';}
+  else{fb.style.color='var(--r)';fb.textContent=gList[gStep].ans==='P'?'🧭 Era il Pilota':'⚡ Era il Motore';}
   gStep++;
   setTimeout(()=>{
-    if(gStep<list.length)drawPm();
+    if(gStep<gList.length)drawPm();
     else{answered[idx]=true;
       document.getElementById('slide').innerHTML=
         `<div class="kicker"><span class="kdot">🏁</span>Fatto</div><div class="title">Gioco finito!</div>
-         <div class="body"><span class="hl g" style="text-align:center;font-size:18px"><strong>${gScore} / ${list.length}</strong> risposte giuste 🎯</span>
+         <div class="body"><span class="hl g" style="text-align:center;font-size:18px"><strong>${gScore} / ${gList.length}</strong> risposte giuste 🎯</span>
          <p>Riconoscere il Pilota e il Motore è il primo passo per far vincere quello giusto.</p></div>`;
       updateNav();}
   }, ok?480:1050);
@@ -427,14 +426,12 @@ function renderRecap(el,s){
     <span class="hl">${gz(s.foot)}</span></div>`;
 }
 
-function needAnswer(){const s=DECK[idx];return (s.q&&!answered[idx])||(s.type==='game'&&!answered[idx]);}
 function updateNav(){
   const next=document.getElementById('next'),last=idx===DECK.length-1;
   next.textContent=last?'Fine · torna alla home':'Avanti';
-  next.classList.toggle('lock',!last&&needAnswer());
 }
 function go(dir){
-  if(dir>0){ if(idx===DECK.length-1){goHome();return;} if(needAnswer())return; idx++; }
+  if(dir>0){ if(idx===DECK.length-1){goHome();return;} idx++; }
   else{ if(idx===0)return; idx--; }
   render();
 }
